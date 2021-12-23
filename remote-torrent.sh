@@ -3,6 +3,8 @@
 CATEGORY="$1"
 TORRENT="$2"
 
+[ -n "$2" ] || { echo "Usage: $0 <CATEGORY> <MAGNET LINK OR PATH TO TORRENT>" ; exit 1 ; }
+
 DOWNLOAD_DIR="~/TRANSMISSION_DOWNLOADS/${CATEGORY}"
 
 REMOTE=user@basedmiles
